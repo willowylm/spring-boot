@@ -13,6 +13,7 @@ public class NumberProcessor implements Processor{
     NumberProcessor(List<Processor> processers){
         this.processers=processers;
     }
+
     @Override
     public List<Integer> process(List<Integer> list) {
         for(Processor processer:processers){

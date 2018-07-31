@@ -22,6 +22,7 @@ public class SpringBootApp implements ApplicationRunner {
         List<Integer> list = Arrays.asList(new Scanner(System.in)
                 .nextLine().split(" ")).stream()
                 .map(Integer::valueOf).collect(Collectors.toList());
+
         System.out.println(numberProcessor.process(list));
     }
 }
